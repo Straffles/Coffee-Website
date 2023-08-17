@@ -30,6 +30,8 @@ header{
     height: 200px;
 }
 
+/* nav bar */
+
 header nav ul{
     background: black;
     display: flex;
@@ -52,12 +54,13 @@ header nav ul li a:hover{
     border-bottom: 2px solid antiquewhite;
 }
 
+/* home page */
+
 .home{
     display: flex; 
     min-height: 100vh;
     height: 100%;
     width: 100%;
-    opacity: 0.85;
     background-image: url("/Coffee-Website/images/background.png");
     background-size: cover;
     flex-direction: column;
@@ -67,6 +70,7 @@ header nav ul li a:hover{
     position: relative;
 }
 
+
 .home-text{
     color: rgb(230, 215, 195);
     font-size: 25px;
@@ -75,6 +79,8 @@ header nav ul li a:hover{
 .htext span{
     color: black;
 }
+
+/* Image Slider */
 
 .slide-container{
     margin-top: 40px;
@@ -189,21 +195,20 @@ header nav ul li a:hover{
 #slider-span4:target ~ .image-slider {left: -12%;}
 #slider-span5:target ~ .image-slider {left: -25%;}
 
+/* menu */
 
 .menu{
-    background: #333333;
+    background-image: url("/Coffee-Website/images/background.png");
+    background-size: cover;
     width: 100%;
+    height: 100vh;
     padding-top: 10em;
 }
 
-.menu .menu-header{
-    display: flex;
-    padding: 10px;
-    align-items: center;
-}
-
 .menu-header h3{
+    margin-top: 40px;
     color: antiquewhite;
+    font-size: 40px;
     padding: 10px 30px;
     align-items: center;
     align-content: center;
@@ -211,29 +216,33 @@ header nav ul li a:hover{
 
 .menu-items{
     display: flex;
-    align-items: center;
+    align-items: top center;
     justify-content: space-evenly;
-    background-color: #404040;
+    height: 100%;
     padding: 50px 0;
     flex-wrap: wrap;
 }
 
 .menu-items .container{
-    width: 280px;
+    width: 403px;
     height: 20px;
 }
 
 .menu-items .container-image{
     width: 100%;
-    height: 200px;
+    height: 403px;
+    overflow: hidden;
 }
 
 .menu .container-image img:hover{
     transform: scale(1.1);
     transition: transform .4s ease-in-out;
+    transition-delay: .2s;
 }
 
 .menu .container-content{
+    align-items: center;
+    background-color: #3B3B3B;
     padding: 20px;
     color: white;
     border: 3px solid #3B3B3B;
@@ -244,6 +253,6 @@ header nav ul li a:hover{
 }
 
 .menu .container-content .price{
+    text-align: center;
     font-size: 22px;
-    margin-left: 90px;
 }
