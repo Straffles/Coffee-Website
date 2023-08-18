@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+html{
+    font-family: Georgia, serif;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: absolute;
+    display: flex;
+    padding: 40px;
+    width: 100%;
+    height: 70px;
+    z-index: 1;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo img{
+    margin-top: 60px;
+    width: 200px;
+    height: 200px;
+}
+
+header nav ul{
+    display: flex;
+
+}
+
+header nav ul li a{
+    margin: 5px 20px;
+    font-size: 20px;
+    color: antiquewhite;
+    padding: 10px 10px;
+}
+
+header nav ul li a:hover{
+    border-bottom: 2px solid whitesmoke;
+}
+
+.home{
+    display: flex; 
+    min-height: 100vh;
+    height: 100%;
+    width: 100%;
+    opacity: 0.85;
+    background-image: url("/Coffee-Website/images/background.png");
+    background-size: cover;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.home-text{
+    color: rgb(230, 215, 195);
+    font-size: 25px;
+}
+
+.htext span{
+    color: black;
+}
+
+.slide-container{
+    margin-top: 40px;
+    width: 40%;
+    height: 65vh;
+    opacity: 1;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    background: black;
+    border-radius: 20px;
+}
+
+.image-slider{
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.7s;
+}
+
+.slide-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 30px 0 30px;
+}
+
+.img{
+    position: relative;
+    width: 240px;
+    height: 370px;
+    border-radius: 10px;
+    transition: 0.5s;
+    filter: saturate(10%);
+}
+
+.button{
+    position: absolute;
+    width: 240px;
+    height: 370px;
+    transition: 0.5s;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#slider-span1:target ~ .image-slider #img1,
+#slider-span1:target ~ .image-slider #button-1{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span2:target ~ .image-slider #img2,
+#slider-span2:target ~ .image-slider #button-2{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span3:target ~ .image-slider #img3,
+#slider-span3:target ~ .image-slider #button-3{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span4:target ~ .image-slider #img4,
+#slider-span4:target ~ .image-slider #button-4{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span5:target ~ .image-slider #img5,
+#slider-span5:target ~ .image-slider #button-5{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span6:target ~ .image-slider #img6,
+#slider-span6:target ~ .image-slider #button-6{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span7:target ~ .image-slider #img7,
+#slider-span7:target ~ .image-slider #button-7{
+    width: 380px;
+    height: 585px;
+    background-color: transparent;
+    filter: saturate(100%);
+}
+
+#slider-span1:target ~ .image-slider {left: 50%;}
+#slider-span2:target ~ .image-slider {left: 20%;}
+#slider-span3:target ~ .image-slider {left: 0%;}
+#slider-span4:target ~ .image-slider {left: -25%;}
+#slider-span5:target ~ .image-slider {left: -50%;}
